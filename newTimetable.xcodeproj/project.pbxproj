@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ACA21E818C1CB97009921CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21E718C1CB97009921CA /* Foundation.framework */; };
+		7ACA21EA18C1CB97009921CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21E918C1CB97009921CA /* CoreGraphics.framework */; };
+		7ACA21EC18C1CB97009921CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21EB18C1CB97009921CA /* UIKit.framework */; };
+		7ACA21EE18C1CB97009921CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21ED18C1CB97009921CA /* CoreData.framework */; };
+		7ACA21F418C1CB97009921CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ACA21F218C1CB97009921CA /* InfoPlist.strings */; };
+		7ACA21F618C1CB97009921CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA21F518C1CB97009921CA /* main.m */; };
+		7ACA21FA18C1CB97009921CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA21F918C1CB97009921CA /* AppDelegate.m */; };
+		7ACA21FD18C1CB97009921CA /* newTimetable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA21FB18C1CB97009921CA /* newTimetable.xcdatamodeld */; };
+		7ACA21FF18C1CB97009921CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACA21FE18C1CB97009921CA /* Images.xcassets */; };
+		7ACA220618C1CB98009921CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA220518C1CB98009921CA /* XCTest.framework */; };
+		7ACA220718C1CB98009921CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21E718C1CB97009921CA /* Foundation.framework */; };
+		7ACA220818C1CB98009921CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21EB18C1CB97009921CA /* UIKit.framework */; };
+		7ACA220918C1CB98009921CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21ED18C1CB97009921CA /* CoreData.framework */; };
+		7ACA221118C1CB98009921CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ACA220F18C1CB98009921CA /* InfoPlist.strings */; };
+		7ACA221318C1CB98009921CA /* newTimetableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA221218C1CB98009921CA /* newTimetableTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ACA220A18C1CB98009921CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACA21DC18C1CB97009921CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACA21E318C1CB97009921CA;
+			remoteInfo = newTimetable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7ACA21E418C1CB97009921CA /* newTimetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTimetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACA21E718C1CB97009921CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7ACA21E918C1CB97009921CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7ACA21EB18C1CB97009921CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7ACA21ED18C1CB97009921CA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7ACA21F118C1CB97009921CA /* newTimetable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "newTimetable-Info.plist"; sourceTree = "<group>"; };
+		7ACA21F318C1CB97009921CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7ACA21F518C1CB97009921CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7ACA21F718C1CB97009921CA /* newTimetable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "newTimetable-Prefix.pch"; sourceTree = "<group>"; };
+		7ACA21F818C1CB97009921CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7ACA21F918C1CB97009921CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7ACA21FC18C1CB97009921CA /* newTimetable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = newTimetable.xcdatamodel; sourceTree = "<group>"; };
+		7ACA21FE18C1CB97009921CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7ACA220418C1CB98009921CA /* newTimetableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newTimetableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACA220518C1CB98009921CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7ACA220E18C1CB98009921CA /* newTimetableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "newTimetableTests-Info.plist"; sourceTree = "<group>"; };
+		7ACA221018C1CB98009921CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7ACA221218C1CB98009921CA /* newTimetableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newTimetableTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ACA21E118C1CB97009921CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACA21EA18C1CB97009921CA /* CoreGraphics.framework in Frameworks */,
+				7ACA21EE18C1CB97009921CA /* CoreData.framework in Frameworks */,
+				7ACA21EC18C1CB97009921CA /* UIKit.framework in Frameworks */,
+				7ACA21E818C1CB97009921CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACA220118C1CB98009921CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACA220618C1CB98009921CA /* XCTest.framework in Frameworks */,
+				7ACA220918C1CB98009921CA /* CoreData.framework in Frameworks */,
+				7ACA220818C1CB98009921CA /* UIKit.framework in Frameworks */,
+				7ACA220718C1CB98009921CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ACA21DB18C1CB97009921CA = {
+			isa = PBXGroup;
+			children = (
+				7ACA21EF18C1CB97009921CA /* newTimetable */,
+				7ACA220C18C1CB98009921CA /* newTimetableTests */,
+				7ACA21E618C1CB97009921CA /* Frameworks */,
+				7ACA21E518C1CB97009921CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7ACA21E518C1CB97009921CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ACA21E418C1CB97009921CA /* newTimetable.app */,
+				7ACA220418C1CB98009921CA /* newTimetableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ACA21E618C1CB97009921CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ACA21E718C1CB97009921CA /* Foundation.framework */,
+				7ACA21E918C1CB97009921CA /* CoreGraphics.framework */,
+				7ACA21EB18C1CB97009921CA /* UIKit.framework */,
+				7ACA21ED18C1CB97009921CA /* CoreData.framework */,
+				7ACA220518C1CB98009921CA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ACA21EF18C1CB97009921CA /* newTimetable */ = {
+			isa = PBXGroup;
+			children = (
+				7ACA21F818C1CB97009921CA /* AppDelegate.h */,
+				7ACA21F918C1CB97009921CA /* AppDelegate.m */,
+				7ACA21FE18C1CB97009921CA /* Images.xcassets */,
+				7ACA21FB18C1CB97009921CA /* newTimetable.xcdatamodeld */,
+				7ACA21F018C1CB97009921CA /* Supporting Files */,
+			);
+			path = newTimetable;
+			sourceTree = "<group>";
+		};
+		7ACA21F018C1CB97009921CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ACA21F118C1CB97009921CA /* newTimetable-Info.plist */,
+				7ACA21F218C1CB97009921CA /* InfoPlist.strings */,
+				7ACA21F518C1CB97009921CA /* main.m */,
+				7ACA21F718C1CB97009921CA /* newTimetable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7ACA220C18C1CB98009921CA /* newTimetableTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ACA221218C1CB98009921CA /* newTimetableTests.m */,
+				7ACA220D18C1CB98009921CA /* Supporting Files */,
+			);
+			path = newTimetableTests;
+			sourceTree = "<group>";
+		};
+		7ACA220D18C1CB98009921CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ACA220E18C1CB98009921CA /* newTimetableTests-Info.plist */,
+				7ACA220F18C1CB98009921CA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ACA21E318C1CB97009921CA /* newTimetable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACA221618C1CB98009921CA /* Build configuration list for PBXNativeTarget "newTimetable" */;
+			buildPhases = (
+				7ACA21E018C1CB97009921CA /* Sources */,
+				7ACA21E118C1CB97009921CA /* Frameworks */,
+				7ACA21E218C1CB97009921CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = newTimetable;
+			productName = newTimetable;
+			productReference = 7ACA21E418C1CB97009921CA /* newTimetable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7ACA220318C1CB98009921CA /* newTimetableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACA221918C1CB98009921CA /* Build configuration list for PBXNativeTarget "newTimetableTests" */;
+			buildPhases = (
+				7ACA220018C1CB98009921CA /* Sources */,
+				7ACA220118C1CB98009921CA /* Frameworks */,
+				7ACA220218C1CB98009921CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACA220B18C1CB98009921CA /* PBXTargetDependency */,
+			);
+			name = newTimetableTests;
+			productName = newTimetableTests;
+			productReference = 7ACA220418C1CB98009921CA /* newTimetableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ACA21DC18C1CB97009921CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Robin's code kitchen";
+				TargetAttributes = {
+					7ACA220318C1CB98009921CA = {
+						TestTargetID = 7ACA21E318C1CB97009921CA;
+					};
+				};
+			};
+			buildConfigurationList = 7ACA21DF18C1CB97009921CA /* Build configuration list for PBXProject "newTimetable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7ACA21DB18C1CB97009921CA;
+			productRefGroup = 7ACA21E518C1CB97009921CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ACA21E318C1CB97009921CA /* newTimetable */,
+				7ACA220318C1CB98009921CA /* newTimetableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ACA21E218C1CB97009921CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACA21F418C1CB97009921CA /* InfoPlist.strings in Resources */,
+				7ACA21FF18C1CB97009921CA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACA220218C1CB98009921CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACA221118C1CB98009921CA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ACA21E018C1CB97009921CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACA21FA18C1CB97009921CA /* AppDelegate.m in Sources */,
+				7ACA21F618C1CB97009921CA /* main.m in Sources */,
+				7ACA21FD18C1CB97009921CA /* newTimetable.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACA220018C1CB98009921CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACA221318C1CB98009921CA /* newTimetableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ACA220B18C1CB98009921CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ACA21E318C1CB97009921CA /* newTimetable */;
+			targetProxy = 7ACA220A18C1CB98009921CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7ACA21F218C1CB97009921CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ACA21F318C1CB97009921CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7ACA220F18C1CB98009921CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ACA221018C1CB98009921CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7ACA221418C1CB98009921CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7ACA221518C1CB98009921CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ACA221718C1CB98009921CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "newTimetable/newTimetable-Prefix.pch";
+				INFOPLIST_FILE = "newTimetable/newTimetable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7ACA221818C1CB98009921CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "newTimetable/newTimetable-Prefix.pch";
+				INFOPLIST_FILE = "newTimetable/newTimetable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7ACA221A18C1CB98009921CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/newTimetable.app/newTimetable";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "newTimetable/newTimetable-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "newTimetableTests/newTimetableTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7ACA221B18C1CB98009921CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/newTimetable.app/newTimetable";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "newTimetable/newTimetable-Prefix.pch";
+				INFOPLIST_FILE = "newTimetableTests/newTimetableTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ACA21DF18C1CB97009921CA /* Build configuration list for PBXProject "newTimetable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACA221418C1CB98009921CA /* Debug */,
+				7ACA221518C1CB98009921CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ACA221618C1CB98009921CA /* Build configuration list for PBXNativeTarget "newTimetable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACA221718C1CB98009921CA /* Debug */,
+				7ACA221818C1CB98009921CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7ACA221918C1CB98009921CA /* Build configuration list for PBXNativeTarget "newTimetableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACA221A18C1CB98009921CA /* Debug */,
+				7ACA221B18C1CB98009921CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7ACA21FB18C1CB97009921CA /* newTimetable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7ACA21FC18C1CB97009921CA /* newTimetable.xcdatamodel */,
+			);
+			currentVersion = 7ACA21FC18C1CB97009921CA /* newTimetable.xcdatamodel */;
+			path = newTimetable.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7ACA21DC18C1CB97009921CA /* Project object */;
+}
