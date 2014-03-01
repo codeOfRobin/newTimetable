@@ -22,6 +22,9 @@
 		7ACA220918C1CB98009921CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21ED18C1CB97009921CA /* CoreData.framework */; };
 		7ACA221118C1CB98009921CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ACA220F18C1CB98009921CA /* InfoPlist.strings */; };
 		7ACA221318C1CB98009921CA /* newTimetableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA221218C1CB98009921CA /* newTimetableTests.m */; };
+		7ACA221E18C1CE1F009921CA /* Notifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA221D18C1CE1F009921CA /* Notifications.m */; };
+		7ACA222118C1CE1F009921CA /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA222018C1CE1F009921CA /* Course.m */; };
+		7ACA222418C1CE1F009921CA /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA222318C1CE1F009921CA /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		7ACA220E18C1CB98009921CA /* newTimetableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "newTimetableTests-Info.plist"; sourceTree = "<group>"; };
 		7ACA221018C1CB98009921CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7ACA221218C1CB98009921CA /* newTimetableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newTimetableTests.m; sourceTree = "<group>"; };
+		7ACA221C18C1CE1F009921CA /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		7ACA221D18C1CE1F009921CA /* Notifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notifications.m; sourceTree = "<group>"; };
+		7ACA221F18C1CE1F009921CA /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		7ACA222018C1CE1F009921CA /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		7ACA222218C1CE1F009921CA /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		7ACA222318C1CE1F009921CA /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +127,7 @@
 				7ACA21F818C1CB97009921CA /* AppDelegate.h */,
 				7ACA21F918C1CB97009921CA /* AppDelegate.m */,
 				7ACA21FE18C1CB97009921CA /* Images.xcassets */,
-				7ACA21FB18C1CB97009921CA /* newTimetable.xcdatamodeld */,
+				7ACA222518C1CE27009921CA /* Database Stuff */,
 				7ACA21F018C1CB97009921CA /* Supporting Files */,
 			);
 			path = newTimetable;
@@ -151,6 +160,20 @@
 				7ACA220F18C1CB98009921CA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7ACA222518C1CE27009921CA /* Database Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				7ACA21FB18C1CB97009921CA /* newTimetable.xcdatamodeld */,
+				7ACA222218C1CE1F009921CA /* Event.h */,
+				7ACA222318C1CE1F009921CA /* Event.m */,
+				7ACA221F18C1CE1F009921CA /* Course.h */,
+				7ACA222018C1CE1F009921CA /* Course.m */,
+				7ACA221C18C1CE1F009921CA /* Notifications.h */,
+				7ACA221D18C1CE1F009921CA /* Notifications.m */,
+			);
+			name = "Database Stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACA222418C1CE1F009921CA /* Event.m in Sources */,
+				7ACA221E18C1CE1F009921CA /* Notifications.m in Sources */,
 				7ACA21FA18C1CB97009921CA /* AppDelegate.m in Sources */,
 				7ACA21F618C1CB97009921CA /* main.m in Sources */,
 				7ACA21FD18C1CB97009921CA /* newTimetable.xcdatamodeld in Sources */,
+				7ACA222118C1CE1F009921CA /* Course.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "newTimetable/newTimetable-Prefix.pch";
 				INFOPLIST_FILE = "newTimetable/newTimetable-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -383,6 +410,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "newTimetable/newTimetable-Prefix.pch";
 				INFOPLIST_FILE = "newTimetable/newTimetable-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
