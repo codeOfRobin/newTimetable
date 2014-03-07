@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5051" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bf4-rr-99D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5051" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aTD-Yf-7E7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Show Courses View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="5Ka-S2-ulf">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="aTD-Yf-7E7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7y9-tC-mFc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bf4-rr-99D" kind="relationship" relationship="rootViewController" id="gzt-0d-hB7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWh-n8-pT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2312" y="-1164"/>
+        </scene>
+        <!--Show Courses View Controller - Courses-->
         <scene sceneID="Esc-hO-zE8">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="bf4-rr-99D" customClass="showCoursesViewController" sceneMemberID="viewController">
@@ -20,7 +35,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" reuseIdentifier="Cell" id="Zf3-7C-x4M">
-                                <rect key="frame" x="30" y="30" width="117" height="100"/>
+                                <rect key="frame" x="30" y="94" width="117" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="117" height="100"/>
@@ -42,10 +57,88 @@
                             <outlet property="delegate" destination="bf4-rr-99D" id="SXN-3v-a2X"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Courses" id="VI0-98-bfd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qIY-mu-B7s">
+                            <connections>
+                                <segue destination="EDj-0C-NYy" kind="modal" id="mjT-Xu-agR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PdZ-Gs-ODe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="498"/>
+            <point key="canvasLocation" x="-1646" y="-1158"/>
+        </scene>
+        <!--Add Car View Controller - Add Course-->
+        <scene sceneID="kml-b2-TaL">
+            <objects>
+                <viewController id="4a6-hT-cXA" customClass="addCarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2l9-jg-UDy"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Pp-Mz-ttp"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="TQh-g1-62L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efW-Xg-Eg6">
+                                <rect key="frame" x="0.0" y="-15" width="320" height="1300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APm-Q6-Tfb">
+                                        <rect key="frame" x="100" y="179" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59607845544815063" green="0.45098042488098145" blue="0.90196084976196289" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59607845544815063" green="0.45098042488098145" blue="0.90196084976196289" alpha="1" colorSpace="deviceRGB"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="Add Course" id="1wW-Bz-qfw">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0OD-1o-13N">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="slr-5p-Mnk" kind="unwind" identifier="cancelSegue" unwindAction="cancel:" id="Lr7-9X-L46"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4vN-tW-fEF">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <segue destination="slr-5p-Mnk" kind="unwind" identifier="doneSegue" unwindAction="done:" id="Naf-zK-kBQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1200"/>
+                    <connections>
+                        <outlet property="textEntry" destination="APm-Q6-Tfb" id="4IZ-Q6-1h6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRz-zB-rng" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="slr-5p-Mnk" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-468" y="-1599"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m7r-Ev-yet">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EDj-0C-NYy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fQl-8Y-V25">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4a6-hT-cXA" kind="relationship" relationship="rootViewController" id="8NL-tS-VyP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0A-10-QHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1102" y="-1029"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

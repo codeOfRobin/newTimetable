@@ -9,9 +9,11 @@
 #import "showCoursesViewController.h"
 #import "Course.h"
 #import "AppDelegate.h"
+#import "addCarViewController.h"
 
 @interface showCoursesViewController ()
-
+- (IBAction)cancel:(UIStoryboardSegue *)segue;
+- (IBAction)done:(UIStoryboardSegue *)segue;
 @end
 
 @implementation showCoursesViewController
@@ -25,6 +27,19 @@
     return self;
 }
 
+-(IBAction)done:(UIStoryboardSegue *)segue
+{
+    addCarViewController *addCarVC=segue.sourceViewController;
+    AppDelegate *appDelegate =
+    [[UIApplication sharedApplication] delegate];
+    self.coursesToShow=[appDelegate getAllCourses];
+    [self.collectionView reloadData];
+}
+
+-(IBAction)cancel:(UIStoryboardSegue *)segue
+{
+    [self.collectionView reloadData];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

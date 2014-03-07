@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A1B3A5518C62DEF0080E4BF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B3A5418C62DEF0080E4BF /* Storyboard.storyboard */; };
 		7A1B3A9F18C65CB40080E4BF /* showCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B3A9E18C65CB40080E4BF /* showCoursesViewController.m */; };
+		7A80DDC818CA6C5500F2F939 /* addCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A80DDC718CA6C5500F2F939 /* addCarViewController.m */; };
 		7ACA21E818C1CB97009921CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21E718C1CB97009921CA /* Foundation.framework */; };
 		7ACA21EA18C1CB97009921CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21E918C1CB97009921CA /* CoreGraphics.framework */; };
 		7ACA21EC18C1CB97009921CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21EB18C1CB97009921CA /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 		7A1B3A5418C62DEF0080E4BF /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 		7A1B3A9D18C65CB40080E4BF /* showCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showCoursesViewController.h; sourceTree = "<group>"; };
 		7A1B3A9E18C65CB40080E4BF /* showCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showCoursesViewController.m; sourceTree = "<group>"; };
+		7A80DDC618CA6C5500F2F939 /* addCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addCarViewController.h; sourceTree = "<group>"; };
+		7A80DDC718CA6C5500F2F939 /* addCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addCarViewController.m; sourceTree = "<group>"; };
 		7ACA21E418C1CB97009921CA /* newTimetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTimetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACA21E718C1CB97009921CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7ACA21E918C1CB97009921CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				7A1B3A5418C62DEF0080E4BF /* Storyboard.storyboard */,
+				7A80DDC618CA6C5500F2F939 /* addCarViewController.h */,
+				7A80DDC718CA6C5500F2F939 /* addCarViewController.m */,
 				7A1B3A9D18C65CB40080E4BF /* showCoursesViewController.h */,
 				7A1B3A9E18C65CB40080E4BF /* showCoursesViewController.m */,
 				7ACA21F818C1CB97009921CA /* AppDelegate.h */,
@@ -287,6 +292,7 @@
 				7ACA21F618C1CB97009921CA /* main.m in Sources */,
 				7ACA21FD18C1CB97009921CA /* newTimetable.xcdatamodeld in Sources */,
 				7ACA222118C1CE1F009921CA /* Course.m in Sources */,
+				7A80DDC818CA6C5500F2F939 /* addCarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
