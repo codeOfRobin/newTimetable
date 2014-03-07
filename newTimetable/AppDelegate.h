@@ -19,4 +19,7 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+
+-(NSArray *)getAllCourses;
+
 @end

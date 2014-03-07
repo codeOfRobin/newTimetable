@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Course.h"
 
 @implementation AppDelegate
 
@@ -142,5 +143,17 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+
+-(NSArray *)getAllCourses
+{
+    NSFetchRequest *request=[[NSFetchRequest alloc]init];
+    NSEntityDescription *entitydesc=[NSEntityDescription entityForName:@"Course" inManagedObjectContext:[self managedObjectContext]];
+    [request setEntity:entitydesc];
+    NSError *error;
+    NSArray *fetchedCourses=[self.managedObjectContext executeFetchRequest:request error:&error];
+    return fetchedCourses;
+}
+
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A1B3A5518C62DEF0080E4BF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B3A5418C62DEF0080E4BF /* Storyboard.storyboard */; };
+		7A1B3A9F18C65CB40080E4BF /* showCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B3A9E18C65CB40080E4BF /* showCoursesViewController.m */; };
 		7ACA21E818C1CB97009921CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21E718C1CB97009921CA /* Foundation.framework */; };
 		7ACA21EA18C1CB97009921CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21E918C1CB97009921CA /* CoreGraphics.framework */; };
 		7ACA21EC18C1CB97009921CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACA21EB18C1CB97009921CA /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		7A1B3A5418C62DEF0080E4BF /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		7A1B3A9D18C65CB40080E4BF /* showCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showCoursesViewController.h; sourceTree = "<group>"; };
+		7A1B3A9E18C65CB40080E4BF /* showCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showCoursesViewController.m; sourceTree = "<group>"; };
 		7ACA21E418C1CB97009921CA /* newTimetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newTimetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACA21E718C1CB97009921CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7ACA21E918C1CB97009921CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				7A1B3A5418C62DEF0080E4BF /* Storyboard.storyboard */,
+				7A1B3A9D18C65CB40080E4BF /* showCoursesViewController.h */,
+				7A1B3A9E18C65CB40080E4BF /* showCoursesViewController.m */,
 				7ACA21F818C1CB97009921CA /* AppDelegate.h */,
 				7ACA21F918C1CB97009921CA /* AppDelegate.m */,
 				7ACA21FE18C1CB97009921CA /* Images.xcassets */,
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ACA222418C1CE1F009921CA /* Event.m in Sources */,
+				7A1B3A9F18C65CB40080E4BF /* showCoursesViewController.m in Sources */,
 				7ACA221E18C1CE1F009921CA /* Notifications.m in Sources */,
 				7ACA21FA18C1CB97009921CA /* AppDelegate.m in Sources */,
 				7ACA21F618C1CB97009921CA /* main.m in Sources */,
